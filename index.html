@@ -1,46 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- external style sheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts Bungee tint -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- end of google fonts -->
+
+    <!-- font awesome embed kit -->
+    <script src="load-fontawesome.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
   </head>
+
   <body>
+    <form action="" method="post">
+      <h3>This is the begining of the form</h3>
+
+      <div class="first-name">
+        <p>First name</p>
+        <input type="text" placeholder="Enter firstname" required />
+      </div>
+
+      <p>Last Name</p>
+      <input type="text" placeholder="Enter lastname" />
+
+      <!-- email -->
+      <p>email</p>
+      <input type="email" placeholder="enter email" />
+
+      <!-- password field -->
+      <p>Password</p>
+      <input type="password" placeholder="bank password" />
+
+      <!-- radi buttons -->
+      <p>Choose your favourite editor</p>
+      <p>VS Code</p>
+      <input type="radio" name="editor" value="vs code" />
+
+      <p>Sublime</p>
+      <input type="radio" name="editor" value="sublime" />
+
+      <p>Atom</p>
+      <input type="radio" name="editor" value="atom" />
+
+      <!-- checkboxes -->
+      <h3>Select your 2 favourite sports</h3>
+      <p>Table Tennis</p>
+      <input type="checkbox" name="sports" />
+
+      <p>Football</p>
+      <input type="checkbox" name="sports" />
+
+      <p>Chess</p>
+      <input type="checkbox" name="sports" />
+
+      <p>Basket ball</p>
+      <input type="checkbox" name="sports" />
+
+      <!-- Your life story -->
+      <p>Please share your story</p>
+      <textarea
+        cols="30"
+        rows="10"
+        placeholder="enter your life story"
+      ></textarea>
+
+      <!-- input of number -->
+      <p>Age</p>
+      <!-- <input type="number" /> -->
+      <select>
+        <option value="vegetable">vegetable</option>
+        <option value="Efo riro">Efo riro</option>
+        <option value="3">Ogbona</option>
+        <option value="4">Edika Ikong</option>
+        <option value="5">Okra Soup</option>
+        <option value="6">Gbegiri</option>
+      </select>
+
+      <br /><br />
+      <!-- <input type="button" value="Submit" /> -->
+      <!-- <input type="submit" value="Submit" /> -->
+      <!-- class = . -->
+      <!-- id = # -->
+      <button class="submit" type="submit">Submit</button>
+      <button class="submit" type="reset">Reset The Form</button>
+    </form>
+
+    <!-- internal style sheet examples -->
+    <button class="test-button" type="submit">Submit</button>
+
+    <h3 class="text-h3">
+      This is a test to know where internal style sheet should be.
+    </h3>
+
+    <!-- end of internal stylesheet -->
+
+    <!-- inline stylesheet -->
+
+    <button type="reset">Clear the form</button>
+
+    <p style="text-align: center; color: chocolate">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nam
+      perspiciatis eos dolorem reprehenderit commodi et odio deserunt eius
+      asperiores, exercitationem aspernatur quo doloremque veniam repudiandae
+      iste iusto ipsam? Aspernatur!
+    </p>
+
+    <p
+      style="
+        background-color: brown;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus
+      blanditiis accusantium hic vel doloremque optio sed dolorem accusamus
+      odit, aliquid culpa voluptatibus deleniti rem iste ad neque! In, ipsam.
+    </p>
+
+    <!-- inline stylesheet -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div class="wrapper">
-      <div class="first-row">
+      <header class="first-row">
         <!-- logo -->
         <img src="./images/logo.png" alt="company logo" class="logo" />
         <!-- menu list -->
+        <!-- -->
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Product</li>
+            <li>Account</li>
+            <li>Cart</li>
+          </ul>
+        </nav>
+      </header>
 
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Product</li>
-          <li>Account</li>
-          <li>Cart</li>
-        </ul>
-      </div>
+      <!-- padding -->
 
       <!-- second row -->
       <div class="second-row">
         <div class="left">
-          <h1>Give your Workout A New style</h1>
+          <h1>
+            Give your Workout <br />
+            A New style
+          </h1>
 
           <p>
             Success isn't always about greatness. It's about consistency.
             Consistent hard work gains success. Greatness will come.
           </p>
+
+          <button class="btn">Explore Now &#8594;</button>
         </div>
 
         <div class="right">
           <img src="./images/image1.png" alt="first image" class="big-image" />
         </div>
-        <!-- textss -->
-
-        <!-- big image -->
       </div>
     </div>
+
+    <!-- the category images -->
+    <!-- the category images -->
+
+    <div class="category">
+      <img src="./images/category-1.jpg" alt="category 1" />
+      <img src="./images/category-2.jpg" alt="category 2" />
+      <img src="./images/category-3.jpg" alt="category 3" />
+    </div>
+
+    <section class="featured-products">
+      <h3 class="">Featured Products</h3>
+
+      <hr class="orange-rule" />
+
+      <div class="row">
+        <!-- first box -->
+        <div class="col-4">
+          <img src="./images/product-1.jpg" alt="product 1" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- second box -->
+
+        <div class="col-4">
+          <img src="./images/product-2.jpg" alt="product 1" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- third box -->
+        <div class="col-4">
+          <img src="./images/product-3.jpg" alt="product 1" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- fourth box -->
+
+        <div class="col-4">
+          <img src="./images/product-4.jpg" alt="product 1" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest products -->
+    <section class="latest-products">
+      <h3 class="">Latest products</h3>
+
+      <hr class="orange-rule" />
+
+      <!-- div for the images -->
+       <div class="row">
+        <!-- first item -->
+        <div class="col-4">
+          <img src="./images/product-1.jpg" alt="product 1" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- second item -->
+        <div class="col-4">
+          <img src="./images/product-2.jpg" alt="product 2" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- third item  -->
+        <div class="col-4">
+          <img src="./images/product-3.jpg" alt="product 3" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- fourth item -->
+        <div class="col-4">
+          <img src="./images/product-4.jpg" alt="product 4" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- fifth item -->
+        <div class="col-4">
+          <img src="./images/product-5.jpg" alt="product 5" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- sixth item -->
+        <div class="col-4">
+          <img src="./images/product-6.jpg" alt="product 6" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- seventh item -->
+        <div class="col-4">
+          <img src="./images/product-7.jpg" alt="product 7" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+
+        <!-- eigthth item -->
+        <div class="col-4">
+          <img src="./images/product-8.jpg" alt="product 8" />
+          <p class="">Red printed T-Shirt</p>
+          <!-- stars -->
+          <div class="">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="">$50.00</p>
+        </div>
+       </div>
+
+    </section>
+
+    <footer></footer>
+
+    
+    </style>
   </body>
 </html>
+
+<!-- internal style sheet -->

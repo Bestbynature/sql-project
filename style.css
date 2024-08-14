@@ -1,37 +1,14 @@
-/* flex */
-/* justify content */
-/* align items */
-/* div {
-  display: flex;
-  align-items: center; vertical 
-  justify-content: space-between; horizontal
-} */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
 
-/* h2 {
-  height: 200px;
-  width: 200px;
-  background-color: red;
-} */
-
-/* p {
-  height: 50px;
-  width: 50px;
-  background-color: blueviolet;
-} */
-
-/* .third {
-  height: 100px;
-  width: 100px;
-  background-color: green;
-} */
-
-/* #big {
-  color: green;
-  background-color: blueviolet;
+/* body {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 } */
 
 .wrapper {
   background: radial-gradient(white, #ffd6d6);
+  padding: 20px;
 }
 
 .first-row {
@@ -41,14 +18,142 @@
 
 .logo {
   width: 100px;
+  border-radius: 20px;
 }
 
 .second-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 25px;
 }
 
 .big-image {
-  width: 350px;
+  width: 450px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  /* margin-right: 20px; */
+  color: #555;
+}
+
+.left > h1 {
+  font-size: 50px;
+}
+
+.left > p {
+  color: #555;
+  width: 40%;
+}
+
+.btn {
+  color: #fff;
+  padding: 10px;
+  background-color: #ff523b;
+  border-radius: 10px;
+  border: none;
+  margin-top: 60px;
+  transition: background-color 0.5s ease-in-out;
+  /* border: 2px solid green; */
+}
+
+/* hover state */
+
+.btn:hover {
+  background-color: #563434;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+.category > img {
+  width: 29%;
+}
+
+/* free to delete */
+.submit {
+  /* padding: 10px 30px 10px 30px; */
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+}
+
+/* flex and grid */
+.first-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.first-name > input {
+  border-radius: 10px;
+  height: 40px;
+}
+
+form > p,
+.first-name > p {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+form {
+  border: 2px solid #ff523b;
+}
+
+.featured-products > h3 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: cursive;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.orange-rule {
+  width: 100px;
+  border: 4px solid #ff523b;
+  border-radius: 10px;
+}
+
+.fa-star {
+  color: #ff523b;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-4 {
+  flex-basis: 22%; /* 25% */
+  transition: transform 0.5s ease-in-out;
+}
+
+.col-4 > img {
+  width: 100%;
+}
+
+.col-4:hover {
+  /* transform: translateX(-20px); */
+  transform: scale(1.2);
+}
+
+.latest-products > h3 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 80px;
 }
