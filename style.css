@@ -206,10 +206,6 @@ form {
   border: 2px dotted black;
 }
 
-/* {} curly braces */
-/* () parentheses */
-/* [] square brackets */
-
 .boxers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
