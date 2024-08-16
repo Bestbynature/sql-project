@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <!-- external style sheet -->
+    <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style.css" />
 
     <!-- google fonts Bungee tint -->
@@ -23,9 +24,39 @@
   </head>
 
   <body>
-    <form action="" method="post">
-      <h3>This is the begining of the form</h3>
+    <!-- The Grid system -->
+    <!-- UI User Interface -->
+    <div class="boxers">
+      <div class="box1"></div>
+      <div
+        class="box2"
+        style="
+          background-color: rgb(23, 91, 14);
+          width: 100px;
+          height: 100px;
+          position: relative;
+        "
+      >
+        <img src="./images/image1.png" alt="" class="image-abs" />
+        <p
+          class=""
+          style="
+            font-size: 20px;
+            color: red;
+            position: absolute;
+            top: 30px;
+            left: 10px;
+          "
+        >
+          Ronaldo
+        </p>
+      </div>
+      <div class="box3"></div>
+      <div class="box3"></div>
+    </div>
 
+    <!-- End of grid system -->
+    <form action="" method="post">
       <div class="first-name">
         <p>First name</p>
         <input type="text" placeholder="Enter firstname" required />
@@ -259,7 +290,7 @@
       <hr class="orange-rule" />
 
       <!-- div for the images -->
-       <div class="row">
+      <div class="row">
         <!-- first item -->
         <div class="col-4">
           <img src="./images/product-1.jpg" alt="product 1" />
@@ -379,13 +410,127 @@
           </div>
           <p class="">$50.00</p>
         </div>
-       </div>
+      </div>
+    </section>
 
+    <!-- EXCLUSIVE -->
+
+    <section class="row pink-gradient">
+      <div class="col-2 centralise">
+        <img src="./images/exclusive.png" alt="Exclusve Image" />
+      </div>
+      <div class="col-2">
+        <p class="col2p">Exclusively Available on Lumia Store</p>
+        <h3 class="">Smart Band 4</h3>
+        <p class="col2p">
+          The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED
+          color full-touch display with adjustable brightness, so everything is
+          as clear as it can be.
+        </p>
+        <button class="btn">Buy Now &#8594;</button>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <!-- first testimonial -->
+      <div class="testi">
+        <i class="fa-solid fa-quote-left"></i>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          blanditiis animi adipisci placeat eligendi ipsam magni ab veritatis et
+          illum quasi tempora consectetur ex, recusandae enim voluptas maiores
+          saepe inventore?
+        </p>
+        <div class="">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="">
+          <img
+            src="./images//user-1.png"
+            alt="user 1"
+            style="width: 70px; height: 70px; border-radius: 100%"
+          />
+        </div>
+        <h3>Alex Fergusson</h3>
+      </div>
+
+      <!-- second testimonial -->
+      <div class="testi">
+        <i class="fa-solid fa-quote-left"></i>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          blanditiis animi adipisci placeat eligendi ipsam magni ab veritatis et
+          illum quasi tempora consectetur ex, recusandae enim voluptas maiores
+          saepe inventore?
+        </p>
+        <div class="">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="">
+          <img
+            src="./images//user-2.png"
+            alt="user 2"
+            style="width: 70px; height: 70px; border-radius: 100%"
+          />
+        </div>
+        <h3>Alex Fergusson</h3>
+      </div>
+
+      <!-- third testimonial -->
+      <div class="testi">
+        <i class="fa-solid fa-quote-left"></i>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          blanditiis animi adipisci placeat eligendi ipsam magni ab veritatis et
+          illum quasi tempora consectetur ex, recusandae enim voluptas maiores
+          saepe inventore?
+        </p>
+        <div class="">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="">
+          <img
+            src="./images//user-3.png"
+            alt="user 3"
+            style="width: 70px; height: 70px; border-radius: 100%"
+          />
+        </div>
+        <h3>Alex Fergusson</h3>
+      </div>
+    </section>
+
+    <!-- brands section -->
+
+    <section class="brands">
+      <img src="./images/logo-godrej.png" alt="godrej" />
+      <img src="./images/logo-oppo.png" alt="oppo" />
+      <img src="./images/logo-coca-cola.png" alt="coca cola" />
+      <img src="./images/logo-paypal.png" alt="paypal" />
+      <img src="./images/logo-philips.png" alt="Philips" />
     </section>
 
     <footer></footer>
 
-    
+    <style>
+      .box3 {
+        background-color: rgba(20, 212, 237, 0.804);
+        height: 100px;
+        width: 100px;
+        border: 4px dashed coral;
+      }
     </style>
   </body>
 </html>

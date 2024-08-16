@@ -1,0 +1,3 @@
+.marquee {
+  animation: marqueDirection 1s linear infinite;
+}
